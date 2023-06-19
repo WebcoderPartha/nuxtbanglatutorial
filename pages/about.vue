@@ -1,6 +1,7 @@
 <template>
     <div>
       <About />
+
     </div>
 </template>
 
@@ -8,6 +9,10 @@
 definePageMeta({
     layout:'aboutlayout'
 })
+useHead({
+        title: 'About page'
+    })
+
 </script>
 
 <style lang="scss" scoped>
