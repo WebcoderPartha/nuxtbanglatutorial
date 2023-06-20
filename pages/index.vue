@@ -3,9 +3,9 @@
        
     <Home />
     <h2>{{ state.number }}</h2>
-    <button @click="increment">Increment</button>
-    <button @click="descrement" v-if="state.number > 1">Descrement</button>
-    <button @click="descrement" v-else disabled>Descrement</button>
+    <button @click="increment" class="btn btn-primary">Increment</button>
+    <button @click="descrement" v-if="state.number > 1" class="btn btn-danger">Descrement</button>
+    <button class="btn btn-danger" @click="descrement" v-else disabled>Descrement</button>
     </div>
 </template>
 
